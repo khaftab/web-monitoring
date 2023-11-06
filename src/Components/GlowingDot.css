@@ -1,0 +1,24 @@
+.glowing-dot {
+  width: 10px; /* Adjust the size as needed */
+  height: 10px;
+  background-color: #00ff00; /* Green color */
+  border-radius: 50%; /* Make it a circle */
+  animation: glowing 1.5s ease-in-out infinite; /* Animation duration and timing */
+
+  /* Additional styles for positioning and other properties */
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7); /* Initial shadow */
+  }
+  50% {
+    box-shadow: 0 0 20px 6px rgba(0, 255, 0, 0.4); /* Maximum glow */
+  }
+  100% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7); /* Back to initial shadow */
+  }
+}
